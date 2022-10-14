@@ -21,8 +21,7 @@ jobs:
       run: dotnet restore
     - name: Build
       run: dotnet build --no-restore
-    - name: Run Parasoft dotTEST
+    - name: SonarQube Quality Gate Check
       # You may pin to the exact commit or the version.
-      uses: parasoft/run-dottest-action@1.2.3
-      with:
-        nobuild: True
+      # uses: SonarSource/sonarqube-quality-gate-action@15767f0e4eb489cfdd989dc717fa78c038d0de8a
+      uses: SonarSource/sonarqube-quality-gate-action@v1.0.0
