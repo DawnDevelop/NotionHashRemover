@@ -77,6 +77,4 @@ jobs:
       uses: github/codeql-action/analyze@v2
       with:
         category: "/language:${{matrix.language}}"
-        
-    - name: Run Parasoft dotTEST
-      uses: parasoft/run-dottest-action@1.2.3
+      
